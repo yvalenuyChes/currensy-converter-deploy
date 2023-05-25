@@ -1,0 +1,35 @@
+@import '../../style/mixins';
+
+
+.container{
+   @include container;
+}
+
+.title{
+  @include title();
+}
+
+.rates__list{
+   margin-top: 30px;
+   height: 500px;
+   text-align: center;
+   width: 100%;
+   overflow-y: auto;
+
+   &__item{
+      padding: 20px 0;
+
+      span{
+         font-weight: 600;
+      }
+   }
+}
+
+.rates__button{
+   padding: 30px 0 0 0;
+   text-align: center;
+}
+
+.rates__link{
+   @include linkButton();
+}
