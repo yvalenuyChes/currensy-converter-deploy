@@ -97,7 +97,7 @@ export default function MainPage() {
                </FormControl>
             </div>
             <div className={classes.converter__button}>
-               <Button text={navigator.language === ('ru' || 'ru-RU') ? 'Получить результат' : 'Get result'} onClick={getData} />
+               <Button disabled={loading} text={navigator.language === ('ru' || 'ru-RU') ? 'Получить результат' : 'Get result'} onClick={getData} />
             </div>
             <div className={classes.result}>
                <p>{navigator.language === ('ru' || 'ru-RU') ? 'Результат: ' : 'Result: '}{
