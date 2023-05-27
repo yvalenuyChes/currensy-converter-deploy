@@ -17,7 +17,12 @@ export default function MainPage() {
    const [loading, setLoading] = useState(false)
 
    function valueHandler(event) {
-      setValue(event.target.value)
+      if(event.target.value < 1){
+         setValue(prev => prev )
+      }else{
+         setValue(event.target.value)
+      }
+      
    }
 
    const [result, setResult] = useState('')
